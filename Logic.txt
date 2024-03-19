@@ -1,0 +1,11 @@
+In this text file I would annalyze my logic that I would use to solve this problem
+-Rock Paper Scissors is a game mostly played by two or more people, but here I would assume just 2, the user and computer
+-So depending on what both players pick, whoever wins gets a point added until the game is over.
+-So players would pick how many rounds they would like to play or whoever reaches a certain point first wins.
+-The winning rules is as follows
+    Winning Rules as follows:
+
+    Rock vs paper-> paper wins
+    Rock vs scissor-> Rock wins
+    paper vs scissor-> scissor wins.
+-
