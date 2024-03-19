@@ -16,4 +16,3 @@ while x != rounds:
     # now we have to make sure user can only enter number of range 1 - 3
     while choice > 3 or choice < 1:
         choice = int(input("Please enter a valid choice \n 1 - Rock \n 2 - Paper \n 3 - Scissors"))
-
