@@ -15,7 +15,7 @@ maxPoint = int(input("What is the max point of the game? "))
 
 while x != rounds or y != maxPoint:
     print(" Pick a choice \n 1 - Rock \n 2 - Paper \n 3 - Scissors")
-    choice = int(input("Enter your choice"))
+    choice = int(input("Enter your choice "))
 
     # now we have to make sure user can only enter number of range 1 - 3
     while choice > 3 or choice < 1:
@@ -48,31 +48,17 @@ while x != rounds or y != maxPoint:
         choiceNameCom = "Scissors"
 
     print("Computer has selected ", choiceNameCom)
-# we put in a condition if it is a draw
-    if choice == choiceCom:
-        print("This is a draw")
-
     # conditions for winning the game
-    if choice == 1 and choiceCom == 2:
-        compPoint = compPoint + 2
-        print("Computer wins ")
-    elif choice == 2 and choiceCom == 1:
-        userPoint = userPoint + 2
-        print("User wins")
-    elif choice == 1 and choiceCom == 3:
-        userPoint = userPoint + 2
-        print("User wins")
-    elif choice == 3 and choiceCom == 1:
-        compPoint = compPoint + 2
-        print("Computer wins")
-    elif choice == 2 and choiceCom == 3:
-        compPoint = compPoint + 2
-        print("Computer wins")
+    if (choice == 1 and choiceCom == 2) or (choice == 2 and choiceCom == 3) or (choice == 3 and choiceCom == 1):
+        compPoint += 1
+        print("Computer wins!")
+    elif (choice == 1 and choiceCom == 3) or (choice == 2 and choiceCom == 1) or (choice == 3 and choiceCom == 2):
+        userPoint += 1
+        print("User wins!")
     else:
-        userPoint = userPoint + 2
-        print("User wins")
+        print("It's a draw!")
 
-    if userPoint or compPoint == maxPoint:
+    if userPoint == maxPoint or compPoint == maxPoint:
         print("You have reached the maximum point possible")
         break
 
