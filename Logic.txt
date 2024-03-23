@@ -8,4 +8,4 @@ In this text file I would analyze my logic that I would use to solve this proble
     Rock vs scissor-> Rock wins
     paper vs scissor-> scissor wins.
 - The computer would get to choose randomly between 1,2,3 while user gets to pick any choice and depending on both outcome
-  the winner is determined
+  the winner is determined by the points

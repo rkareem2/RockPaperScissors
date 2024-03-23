@@ -44,7 +44,7 @@ while y != maxPoint:
         choiceNameCom = "Scissors"
 
     print("Computer has selected ", choiceNameCom)
-    # conditions for winning the game
+    # conditions for winning the games
     # conditions if the computer wins and it adds two points
     if (choice == 1 and choiceCom == 2) or (choice == 2 and choiceCom == 3) or (choice == 3 and choiceCom == 1):
         compPoint += 2
